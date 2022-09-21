@@ -12,7 +12,6 @@ class HSI:
         self,
         name: str,
         data_dir: str = "./Unmixing_Tutorial_IEEE_IADF/datasets/",
-        figs_dir: str = "./figs",
     ):
         path = os.path.join(data_dir, name)
         assert os.path.isfile(path)
@@ -59,11 +58,6 @@ class HSI:
         # Endmembers Non-negative Constraint
         self.E = np.maximum(self.E, 0)
         assert np.all(self.E >= -EPS)
-
-        # Save figures path
-        self.figs_dir = figs_dir
-        if self.figs_dir is not None:
-            os.makedirs(self.figs_dir, exist_ok=True)
 
     def __repr__(self):
         msg = f"HSI => {self.shortname}\n"
