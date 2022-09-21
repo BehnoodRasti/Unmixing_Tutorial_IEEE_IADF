@@ -11,12 +11,14 @@ class HSI:
     def __init__(
         self,
         name: str,
+        data_dir: str = "./Unmixing_Tutorial_IEEE_IADF/datasets/",
         figs_dir: str = "./figs",
     ):
-        assert os.path.isfile(name)
+        path = os.path.join(data_dir, name)
+        assert os.path.isfile(path)
         self.shortname = name.strip(".mat")
 
-        data = sio.loadmat(name)
+        data = sio.loadmat(path)
         print(f"Matlab data keys: {data.keys()}")
 
         for key in filter(
