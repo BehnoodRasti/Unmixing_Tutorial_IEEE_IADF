@@ -7,7 +7,7 @@ This course will discuss linear hyperspectral unmixing, including Geometrical Ap
 
 This course contains an open source python-based repository. The repository contains two supervised unmixing, one sparse (semisupervised) unmixing, and four blind unximing. The list of the methods are as follow. Colab version of the notebooks are provided for all the methods. 
 Supervised Unmixing:
-1-FCLSU: Fully constraint least square unmixing. VCA is used for endmember extraction.
+1-FCLSU: Fully constraint least square unmixing. VCA is used for endmember extraction.\
 2-UnDIP: Unmixing using Deep Image Prior. SiVM is used for endmember extraction.
 Sparse (Semisupervised) Unmixing:
 3- SUnCNN: Sparse Unmxing using Unsupervised Convolutional Neural Network
