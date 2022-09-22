@@ -21,4 +21,4 @@ Blind Unmixing:
 4- MiSiCNet: Minimum Simplex Convolutional Network for Deep Hyperspectral Unmixing\
 5- EDAA: Entropic Descent Archetypal Analysis for Blind Hyperspectral Unmixing\
 6- CNNAE: Convolutional Autoencoder for Spectral–Spatial Hyperspectral Unmixing\
-7- EndNet: Sparse AutoEncoder Network for Endmember Extraction and Hyperspectral Unmixing\
+7- EndNet: Sparse AutoEncoder Network for Endmember Extraction and Hyperspectral Unmixing
