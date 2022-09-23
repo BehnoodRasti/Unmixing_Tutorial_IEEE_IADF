@@ -31,16 +31,20 @@ This course contains an open source python-based repository. The repository cont
 ### I do not have a GPU
 
 For users that do not have access to a GPU, we recommend to use the notebooks directly in Google Colab.
-You can access Colab by clicking on the link at the top of each notebook (.ipynb files).
+You can access Colab by clicking on the link at the top of each notebook (.ipynb files) rendered on Github.
 
 ### I have a GPU
 
 If you have access to a GPU, it is preferred that you run the notebook yourself, without using Colab.
 
 In order for the notebooks to run properly, you will need to install some Python packages yourself in a dedicated `conda` environment.
-Simply follow the instructions below.
+Simply follow the instructions below and copy paste the commands in a terminal.
 
 #### Instructions
+
+---
+
+##### 10 to 20 minutes depending on your Internet connection speed
 
 We recommend using `conda` to handle the Python distribution and `pip` to install the Python packages.
 
@@ -51,20 +55,38 @@ git clone https://github.com/BehnoodRasti/Unmixing_Tutorial_IEEE_IADF.git
 cd Unmixing_Tutorial_IEEE_IADF
 ```
 
-2. Create a dedicated `conda` environment, named `iadf`, based on the `conda.txt` file.
+2. Create a dedicated `conda` environment named `iadf` for Python 3.8.
 
 ```
-conda create --name iadf --file conda.txt
+conda create --name iadf python=3.8
 ```
 
-3. Activate the `conda` environment
+* If you do not have `conda` on your computer, first install it using [Miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation).
+
+3. Activate the `conda` environment.
 
 ```
 conda activate iadf
 ```
 
-4. Install the required Python packages
+4. Install the required Python packages.
 
 ```
 pip install -r requirements.txt
 ```
+
+5. Install the relevant `ipython` kernel to be used in Jupyter.
+
+```
+ipython kernel install --user --name iadf
+```
+
+6. Launch `jupyter lab`. This will open a new tab in your browser.
+
+```
+jupyter lab
+```
+
+7. Open any notebook from the repository and make sure you select the right Kernel. In the menu, click on `Kernel` and select `Change Kernel...`. Finally, pick the `iadf` kernel and you are ready to go!
+
+Note that the notebooks were primarily designed to function with Colab. As such, you may encounter code that is not useful when running on a standalone notebook. We still recommend that you run the notebook linearly to make sure everything works as intended. Address any questions to the course instructors.
