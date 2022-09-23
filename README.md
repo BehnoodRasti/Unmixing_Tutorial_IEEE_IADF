@@ -89,12 +89,12 @@ jupyter lab
 
 7. Open any notebook from the repository and make sure you select the right Kernel. In the menu, click on `Kernel` and select `Change Kernel...`. Finally, pick the `iadf` kernel and you are ready to go!
 
-Note that the notebooks were primarily designed to function with Colab. As such, you may encounter code that is not useful when running on a standalone notebook. We still recommend that you run the notebook linearly to make sure everything works as intended. Address any questions to the course instructors.
+Note that the notebooks were primarily designed to function with Colab. As such, you may encounter code that is not necessary when running on a standalone notebook. However we still recommend that you run the notebook as is (*e.g.* linearly to make sure everything works as intended). Address any questions to the course instructors.
 
 
 #### My GPU is on a remote server - How can I render the notebooks locally?
 
-1. **On your remote server**, launch `jupyter lab` on a dedicated port:
+1. **On your remote server**, launch `jupyter lab` on a specific port (*e.g.* `1234`):
 
 ```
 jupyter lab --no-browser --port 1234
@@ -102,12 +102,11 @@ jupyter lab --no-browser --port 1234
 
 2. To be able to display the notebooks on your **local browser**, you need to setup a `ssh` tunnel in a terminal on your **local** machine:
 
+* Please change `remote_username` and `remote_machine_address` according to your specific configuration.
+
 ```
 ssh -NL 1234:localhost:1234 <remote_username>@<remote_machine_address> -f
 ```
-
-* Please change `remote_username` and `remote_machine_address` according to your specific configuration.
-
 3. Now open your favorite browser at the following address: http://localhost:1234/lab
 
 4. You may need to copy paste the jupyterlab-generated URL that contains a token from your remote server to your local browser, *e.g.* http://localhost:1234/lab?token=e76fd55267495be44b79e3d2313257faf68a7a47de4969b5
