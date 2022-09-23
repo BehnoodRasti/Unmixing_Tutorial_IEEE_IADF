@@ -10,7 +10,6 @@ backcall==0.2.0
 beautifulsoup4==4.11.1
 bleach==5.0.1
 cachetools==4.2.4
-certifi @ file:///opt/conda/conda-bld/certifi_1663615672595/work/certifi
 cffi==1.15.1
 charset-normalizer==2.1.1
 contourpy==1.0.5
