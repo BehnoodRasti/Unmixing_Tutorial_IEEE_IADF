@@ -1,5 +1,5 @@
 # Unmixing-Tutorial
-This repo is prepared for IEEE Image Analysis and Data Fusion (IADF) Summer school 3rd Oct. 2022. 
+This repo is prepared for IEEE Image Analysis and Data Fusion (IADF) Summer school 3rd Oct. 2022. [recorded lecture] (https://www.youtube.com/watch?v=_IwI3iBxibY&ab_channel=IEEEGRSS)
 
 ## Abstract of the Course
 
