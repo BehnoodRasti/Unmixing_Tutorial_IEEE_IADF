@@ -53,6 +53,15 @@ class SADDegrees(SpectralAngleDistance):
         tmp = super().__call__(E, Eref)
         return (np.diag(tmp) * (180 / np.pi)).mean()
 
+class SRE(BaseMetric):
+    def __init__(self):
+        super().__init__()
+
+    def __call__(self, X, Xref):
+        X, Xref = self._check_input(X, Xref)
+        return 20 * np.log10(
+            LA.norm(Xref, "fro") / LA.norm((Xref - np.clip(X, 0, 1)), "fro")
+        )
 
 class MeanSquareError(BaseMetric):
     def __init__(self):
